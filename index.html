@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tabla.css">
+  </head>
+  <body onload="onLoad()" background="https://s3.eu-central-1.amazonaws.com/mundial2018-mzv/fondo.jpg">
+
+    <div class="" id="app" style="display:none;">
+      <div class="" id="log" v-show="!sinLog">
+          <div class="head" >
+            <img v-bind:src="usuario.foto" width="50px" class="imgLog">
+            <div class="dNomUser">{{usuario.nombre}}</div>
+
+            <!--input type="text" name="" value="" class="porcentaje-main"
+              readonly v-model=porcentajeMain
+              v-bind:style="baseStylesMain"
+            -->
+            <button type="button" name="button"  v-on:click=salir1()>Salir</button>
+          </div>
+          <div class="_3Jtl7"  align=center>
+            <div class="hi4h9">
+              <svg class="_1fA67" width="23" height="48" viewBox="-1 0 23 48" version="1.1">
+                <path fill="#B4A97B" d="M8.1 9.8C11.3 0.5 18 0 23 0v48c-5 0-11.5-0.4-14.9-9.6C4.7 28.2 1.4 25.3 0 24 1.4 22.8 4.5 19.9 8.1 9.8z">
+                </path>
+              </svg>
+              <div class="_3r4sW"
+              style="background-color: rgb(180, 169, 123); color: rgb(240, 235, 226); border-top: 2px solid transparent; border-bottom: 2px solid transparent;">
+                <div class="dGrupo">
+                  <span class="titGrupo">Grupo:</span>
+                    <select name="" class="select-nav"  v-on:change=selGrupo() v-model=grupoSel>
+                       <option value="a">A</option>
+                       <option value="b">B</option>
+                       <option value="c">C</option>
+                       <option value="d">D</option>
+                       <option value="e">E</option>
+                       <option value="f">F</option>
+                       <option value="g">G</option>
+                       <option value="h">H</option>
+                    </select>
+                    <input type="text" name="" v-model=porcentaje
+                      class=porcentaje readonly
+                      v-bind:style="baseStyles">
+                </div>
+
+            </div>
+            <svg class="LuLu9" width="23" height="48" viewBox="1 0 23 48" version="1.1">
+              <path fill="#B4A97B" d="M23 24c-1.4 1.3-4.3 3.3-8.1 14.3C11.4 47.9 5 48 0 48V0c5 0 11.5 0.2 14.9 9.8C18.8 20.8 21.6 22.8 23 24z"></path>
+            </svg>
+          </div>
+
+        </div>
+
+
+
+          <div class="dPartidos" id=grupo align=center>
+            <ul>
+              <li v-for="partido of partidos" v-bind:key="partido['.key']">
+
+                  <div class="_2JeDw">
+                    <div class="_4JImx">{{partido.fecha}}</div>
+                    <div class="_2jMEv">
+                      <div class="_100Ez">
+                        <div class="_1dWBt">
+                          <div class="OccA4">
+                            <div></div>
+                          </div>
+                          <div class="_2gFVG">
+                            <div class="_3UOzG">
+                              <img  v-bind:src="partido.flag1" width="72px">
+                              <div class="Jd_tz">{{partido.equipo1}}</div>
+                            </div>
+                            <div class="_3Xc21">
+                              <div class="Ll-sV">
+                                <input type="tel" class="_2-N7r" value="" maxlength="2" v-on:click="verApuesta(partido.id)"
+                                 v-on:change="golChange(partido)" v-model=partido.gol1>
+                                <em class="_5acNT"></em>
+                                <input type="tel" class="_2-N7r" value="" maxlength="2" v-on:click="verApuesta(partido.id)"
+                                 v-on:change="golChange(partido)" v-model=partido.gol2>
+                              </div>
+                            </div>
+                            <div class="_3UOzG">
+                              <img v-bind:src="partido.flag2"  width="72px">
+                              <div class="Jd_tz">{{partido.equipo2}}</div>
+                            </div>
+                          </div>
+                          <div class="_2Kyli">{{partido.estadio}} </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                <div class="detApuestas" v-show=partido.ver>
+                  <ul>
+                    <li v-for="apuesta of apuestas" v-bind:key="apuesta['.key']">
+                      <img v-bind:src="apuesta.usrFoto" width="25px"/>
+                      {{apuesta.usrName}}:
+                      <span class="detApuestas-score">{{apuesta.gol1}} - {{apuesta.gol2}}</span>
+                     </li>
+                  </ul>
+                </div>
+               </li>
+
+            </ul>
+          </div>
+      </div>
+      <div class="" id="sinlog" v-show="sinLog">
+        <button type="button" name="button" v-on:click=login() class="btnSalir">Login con Google</button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+._2JeDw {
+    display: inline-block;
+    max-width: 300px;
+    padding: 10px 15px;
+    position: relative;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+}
+._4JImx {
+    font-family: 'Dusha V5'; font-weight: 400; font-style: normal;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #f0ebe2;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 0;
+}
+._2jMEv {
+    background: -webkit-gradient(linear,left top,right top,from(#f1ece3),color-stop(0,#f1ece3),color-stop(53.08%,#fff),to(#f1ece3));
+    background: -webkit-linear-gradient(left,#f1ece3,#f1ece3 0,#fff 53.08%,#f1ece3);
+    background: -o-linear-gradient(left,#f1ece3 0,#f1ece3 0,#fff 53.08%,#f1ece3 100%);
+    background: linear-gradient(90deg,#f1ece3,#f1ece3 0,#fff 53.08%,#f1ece3);
+}
+._100Ez {
+    border-top: 5px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+._2gFVG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 48px;
+    padding: 1px 0 18px;
+    width: 100%;
+    margin: auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.hi4h9 {
+    display: inline-flex;
+}
+._3UOzG .Jd_tz {
+    width: 90px;
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    left: -10px;
+    top: 60px;
+}
+._2-N7r {
+    width: 40px;
+    height: 48px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "Dusha V5";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+._3Jtl7 {
+    max-width: 1440px;
+    padding: 15px 15px;
+    border-radius: 2px;
+}

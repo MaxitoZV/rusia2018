@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="onLoad()">
+    <div class="" id="app">
+      {{titulo}}
+      <div class="" id="log" v-show="!sinLog">
+          <div class="head" >
+            <img v-bind:src="usuario.foto" width="50px"/ class="imgLog">
+            {{usuario.nombre}}
+            <!--button type="button" name="button"  v-on:click=addClick()>salir</button-->
+          </div>
+          <button type="button" v-on:click=copiar() name="button">Copiar Apuestas</button>
+          <button type="button" v-on:click=creaGrupo() name="button">Crear partidos</button>
+      </div>
+      <div class="" v-show="sinLog">
+        <input type="text" name="" v-model=errmsj value="" readonly>
+        <button type="button" name="button" v-on:click=login() class="btnSalir">Login</button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script type="text/javascript" src="js/copiaApuestas.js"></script>
+  </body>
+</html>

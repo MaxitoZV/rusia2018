@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tabla.css">
+  </head>
+  <body onload="onLoad();">
+    <div class="" id="app"   style="display:none;" >
+      <div class="" id="log" v-show="!sinLog">
+          <div class="head" >
+            <img v-bind:src="usuario.foto" width="50px"/ class="imgLog">
+            {{usuario.nombre}}
+          </div>
+          <div class="" id=reporte align=center>
+            <ul>
+              <li  v-for="dato of datos"  v-bind:key="dato['.key']">
+               {{dato.sec}} .- {{dato.nombre}} - {{dato.contador}} de 48
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="" id="sinlog" v-show="sinLog">
+        <button type="button" name="button" v-on:click=login() class="btnSalir">Login</button>
+        <div class="" v-show="err.flag">
+          Error:  {{err.mesj}}
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/reporte1.js"></script>
+  </body>
+</html>

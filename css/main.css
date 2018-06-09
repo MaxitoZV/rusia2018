@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "dusha-regular";
+    src: url("/css/dusha-regular.woff");
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dusha V5'; font-weight: normal; font-style: normal;
+    color:#1C3F93;
+}
+div{
+  margin: 0px;
+  padding: 0px;
+
+}
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     align-items: center;
+     border: 1px;
+}
+li{
+}
+option{
+  text-align: center;
+}
+
+.dGrupo{
+  margin-top: 10px;
+}
+
+.porcentaje{
+  text-align:  center;
+  width: 110px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+.porcentaje-main{
+  align:right;
+  text-align:  center;
+  width: 60px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.head{
+  background-color:  #002c5f;
+  border-bottom: 2px solid #a2aeb5;
+  color: #b4a97b;
+  width: 100%;
+  background-color: #002c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.imgLog{
+  vertical-align:middle;
+}
+.dPartidos{
+}
+.dNomUser{
+  display: flex;
+  padding: 10px;
+}
+.det1{
+  font-size: 10px;
+  color: brown;
+  margin: 3px;
+  padding: 3px;
+}
+.select-nav{
+  font-size: 15px;
+  color: brown;
+  width: 50px;
+  height: 20px;
+  text-align-last:center;
+}
+.titGrupo{
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #f0ebe2;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 0;
+}
+.detApuestas{
+  max-width: 235px;
+  padding: 0 0 0 3px;
+
+  margin-bottom: 20px;
+
+  border-style: double;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: blue;
+  background-color: white;
+}
+.detApuestas-score{
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: black;
+
+}
+
+
+.Ll-sV {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._3UOzG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: dusha-regular;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #1e1e1e;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60px;
+    position: relative;
+    min-width: 72px;
+}
+.OccA4 {
+    font-family: Open Sans,Sans-Serif;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    padding-top: 10px;
+    text-align: center;
+}

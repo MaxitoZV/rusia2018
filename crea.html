@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width"/>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body onload="onLoad()">
+    <div class="" id="app" v-on:load=onload()>
+      <div class="" id="sinlog" v-show="sinLog">
+        <button type="button" name="button" v-on:click=login()>Login</button>
+
+      </div>
+      <div class="" id="log" v-show="!sinLog">
+          <img v-bind:src="usuario.foto" width="50px"/>{{usuario.nombre}}
+          <button type="button" name="button"  v-on:click=addClick()>salir</button>
+          <button type="button" name="button" v-on:click=creaGrupo()>Crea Grupo</button>
+          <p align=center>Grupo:<select name="" class="select-nav" v-on:change=selGrupo() v-model=grupoSel>
+               <!--option value="-"> </option-->
+               <option value="a">A</option>
+               <option value="b">B</option>
+               <option value="c">C</option>
+               <option value="d">D</option>
+               <option value="e">E</option>
+               <option value="f">F</option>
+               <option value="g">G</option>
+               <option value="h">H</option>
+            </select>
+          </p>
+          <div class="" id=grupo align=center>
+            <ul>
+              <li v-for="partido of partidos" v-bind:key="partido['.key']">
+                <!--img v-bind:src="producto.foto" width="50px"/>{{producto.descripcion}} - S/ {{producto.precio}}
+                <button type="button" name="button" v-on:click="delClick(producto['.key'])">X</button-->
+                <input readonly type="text" name="" class="eq1" v-model=partido.equipo1>
+                <input type="number" name="" min="0" class="gol" v-on:change="golChange(partido)" max=30 v-model=partido.gol1>
+                <input type="number" name="" min="0" class="gol" v-on:change="golChange(partido)" max=30 v-model=partido.gol2>
+                <input readonly type="text" name="" class="eq2" v-model=partido.equipo2>
+               </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script type="text/javascript" src="js/crea.js"></script>
+  </body>
+</html>
